@@ -3,6 +3,16 @@
 nel nostro caso 1rem 16px
 quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 
+body{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+}
+
+h1{
+    font-size: 35px;
+}
+
 .row:after{
     content: '';
     display: table;
@@ -19,6 +29,7 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 
 .header-top{
     height: 50px;
+    
 }
 
 .header-top > .row{
@@ -37,6 +48,8 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 .header-top ul li a{
     font-style: none;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #404040;
 }
 
 .header-top .row> .col-lg-10:first-child ul{
@@ -47,13 +60,25 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
     padding-right: 15px;
 }
 
+.header-top .row> .col-lg-2 ul{
+    text-align: center;
+}
+
+.header-top .row> .col-lg-2 ul li a{
+    border-right: 1px solid black;
+    padding: 0 5px;
+
+}
+
+.header-top .row> .col-lg-2 ul li:last-child a{
+    border-right: none;
+}
+
 /* jumbotron */
 
-.jumbotron .row [class*="col-"],
 section.prodotti .row .col-lg-6 .col-lg-12{
     position: relative;
 }
-    
 
 .centro{
     position: absolute;
@@ -61,4 +86,20 @@ section.prodotti .row .col-lg-6 .col-lg-12{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.jumbotron{
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    height: 500px;
+}
+
+.testo{
+    text-align: center;
+}
+
+.jumbotron .testo p{
+    margin: 30px auto;
+}
+
+
 
