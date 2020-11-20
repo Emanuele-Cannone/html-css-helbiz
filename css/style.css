@@ -2,3 +2,63 @@
 /* 1rem equivale al font specificato nel body,
 nel nostro caso 1rem 16px
 quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
+
+.row:after{
+    content: '';
+    display: table;
+    box-sizing: border-boxs;
+}
+
+.row .row:after{
+    content: '';
+    display: table;
+    box-sizing: border-boxs;
+}
+
+/* header-top */
+/* 
+.header-top{
+    height: 50px;
+}
+
+.header-top > .row{
+    line-height: 50px;
+}
+
+.header-top > .row:first-child img{
+    vertical-align: middle;
+}
+
+.header-top ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header-top ul li a{
+    font-style: none;
+    text-decoration: none;
+}
+
+.header-top .row> .col-lg-10:first-child ul{
+    text-align: right;
+}
+
+.header-top .row> .col-lg-10:first-child li{
+    padding-right: 15px;
+} */
+
+/* jumbotron */
+
+.jumbotron .row [class*="col-"],
+section.prodotti .row .col-lg-6 .col-lg-12{
+    position: relative;
+}
+    
+
+.centro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
