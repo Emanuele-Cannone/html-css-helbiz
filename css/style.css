@@ -6,11 +6,28 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 body{
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size:15px;
+    font-size: 15px;
 }
 
-h1{
-    font-size: 35px;
+.f-size-40{
+    font-size: 40px;
+}
+
+.f-size-30{
+    font-size: 30px;
+}
+
+.pad-30{
+    padding: 30px;
+}
+
+.m-top-60{
+margin-top: 60px;
+
+}
+
+.text-bla{
+    color: #404040;
 }
 
 .row:after{
@@ -29,7 +46,6 @@ h1{
 
 .header-top{
     height: 50px;
-    
 }
 
 .header-top > .row{
@@ -76,7 +92,10 @@ h1{
 
 /* jumbotron */
 
-section.prodotti .row .col-lg-6 .col-lg-12{
+.jumbotron{
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    height: 800px;
     position: relative;
 }
 
@@ -87,12 +106,6 @@ section.prodotti .row .col-lg-6 .col-lg-12{
     transform: translate(-50%, -50%);
 }
 
-.jumbotron{
-    background-image: url('../img/hero-bg.jpg');
-    background-size: cover;
-    height: 500px;
-}
-
 .testo{
     text-align: center;
 }
@@ -101,5 +114,30 @@ section.prodotti .row .col-lg-6 .col-lg-12{
     margin: 30px auto;
 }
 
+/* jumbotron */
 
+/* prodotti */
 
+section.prodotti{
+    height: 700px;
+}
+
+.prodotti .row>.col-lg-5{
+    background-color: #fafafa;
+}
+
+.prodotti .row .col-lg-12 img{
+    height: 500px;
+}
+
+.prodotti .row .col-lg-12{
+    text-align: center;
+}
+
+.prodotti .row .col-lg-12 ul{
+    list-style: none;
+}
+
+.prodotti .row .col-lg-12 a{
+    text-decoration: none;
+}
