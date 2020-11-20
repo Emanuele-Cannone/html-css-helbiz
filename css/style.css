@@ -16,7 +16,7 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 }
 
 /* header-top */
-/* 
+
 .header-top{
     height: 50px;
 }
@@ -45,7 +45,7 @@ quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 
 .header-top .row> .col-lg-10:first-child li{
     padding-right: 15px;
-} */
+}
 
 /* jumbotron */
 
