@@ -22,8 +22,11 @@ body{
 }
 
 .m-top-60{
-margin-top: 60px;
+    margin-top: 60px;
+}
 
+.m-bot-60{
+    margin-bottom: 60px;
 }
 
 .text-bla{
@@ -114,21 +117,16 @@ margin-top: 60px;
     margin: 30px auto;
 }
 
-/* jumbotron */
-
 /* prodotti */
-
-section.prodotti{
-    height: 700px;
-}
 
 .prodotti .row>.col-lg-5{
     background-color: #fafafa;
 }
 
-.prodotti .row .col-lg-12 img{
-    height: 500px;
+.col-lg-5 .row .col-lg-12 img{
+    height: 250px;
 }
+
 
 .prodotti .row .col-lg-12{
     text-align: center;
@@ -140,4 +138,34 @@ section.prodotti{
 
 .prodotti .row .col-lg-12 a{
     text-decoration: none;
+}
+
+/* sezione telefono */
+
+section.telefono{
+    position: relative;
+}
+
+section.telefono .row:first-child{
+    background-image: url('../img/index-banner.1f6fd0a.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 380px;
+}
+
+section.telefono .row> [class*="col-"]{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.iphone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 250px;
+    background-image: url('../img/iphone-frame.7897a89.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 250px;
 }
