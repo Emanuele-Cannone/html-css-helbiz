@@ -9,12 +9,12 @@ body{
     font-size: 15px;
 }
 
-.f-size-40{
-    font-size: 40px;
-}
-
 .f-size-30{
     font-size: 30px;
+}
+
+.f-size-40{
+    font-size: 40px;
 }
 
 .pad-10{
@@ -52,6 +52,12 @@ body{
     display: table;
     box-sizing: border-boxs;
 }
+
+
+
+/* header */
+
+
 
 /* header-top */
 
@@ -126,6 +132,13 @@ body{
 .jumbotron .testo p{
     margin: 30px auto;
 }
+
+
+
+/* main */
+
+
+
 
 /* prodotti */
 
@@ -246,8 +259,98 @@ section.app-find .row .col-lg-5:last-child{
     background-size: cover;
     background-position: center;
     height: 400px;
+}
+
+/* section social */
+
+section.social{
+    background-image: url('../img/4dad15dc-ea60-482d-a008-427825031ad6.JPG');
+    height: 500px;
+    position: relative;
+}
+
+section.social .row .col-lg-4{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.social .row .col-lg-4 ul li{
+    list-style: none;
+    display: inline;
+}
 
 
+/* footer */
+
+
+/* section policy */
+
+section.policy, section.footer-up, section.footer-down{
+    background-color: black;
+}
+
+section.policy .col-lg-3{
+    margin-top: 40px;
+}
+
+section.policy li{
+    list-style: none;
+}
+
+section.policy .row .col-lg-3 a{
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+section.policy .row .col-lg-3:first-child ul li a{
+    /* font-size: 30px; */
+}
+
+section.policy .row .col-lg-3 li:first-child a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+section.policy .row .col-lg-3 ul li{
+    padding: 10px 0;
+}
+
+/* section footer-up */
+
+footer section.footer-up .row{
+    border-top: 1px solid #7c7c7c;
+    border-bottom: 1px solid #7c7c7c;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer section.footer-up .row [class*="col-"]:first-child ul li{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+section.footer-up .row [class*="col-"]{
+    text-transform: capitalize;
+}
+
+section.footer-up .row [class*="col-"] ul li{
+    list-style: none;
     
+}
 
+section.footer-up .row [class*="col-"] ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* footer-down */
+section.footer-down a img{
+    border: 1px solid white;
+    border-radius: 10px;
 }
