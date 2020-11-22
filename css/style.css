@@ -4,7 +4,7 @@ nel nostro caso 1rem 16px
 quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
 
 body{
-    color: white;
+    color:white;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
@@ -17,8 +17,16 @@ body{
     font-size: 30px;
 }
 
+.pad-10{
+    padding: 10px;
+}
+
 .pad-30{
     padding: 30px;
+}
+
+.m-top-40{
+    margin-top: 40px;
 }
 
 .m-top-60{
@@ -86,7 +94,6 @@ body{
 .header-top .row> .col-lg-2 ul li a{
     border-right: 1px solid black;
     padding: 0 5px;
-
 }
 
 .header-top .row> .col-lg-2 ul li:last-child a{
@@ -97,8 +104,11 @@ body{
 
 .jumbotron{
     background-image: url('../img/hero-bg.jpg');
-    background-size: cover;
-    height: 800px;
+    background-repeat: no-repeat;
+    background-size: 1950px;
+    height: 600px;
+    background-position-x: left;
+    background-position-y: bottom;
     position: relative;
 }
 
@@ -119,14 +129,13 @@ body{
 
 /* prodotti */
 
-.prodotti .row>.col-lg-5{
+.prodotti .row>.col-lg-4{
     background-color: #fafafa;
 }
 
-.col-lg-5 .row .col-lg-12 img{
+.col-lg-4 .row .col-lg-12 img{
     height: 250px;
 }
-
 
 .prodotti .row .col-lg-12{
     text-align: center;
@@ -148,9 +157,11 @@ section.telefono{
 
 section.telefono .row:first-child{
     background-image: url('../img/index-banner.1f6fd0a.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
-    height: 380px;
+    background-size: 1950px;
+    height: 600px;
+    background-position-x: left;
+    background-position-y: bottom;
 }
 
 section.telefono .row> [class*="col-"]{
@@ -160,12 +171,83 @@ section.telefono .row> [class*="col-"]{
 
 .iphone{
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-size: 250px;
+    background-size: 100%;
     background-image: url('../img/iphone-frame.7897a89.png');
     background-repeat: no-repeat;
     height: 500px;
     width: 250px;
+}
+
+
+/* sezione parco */
+
+section.parco{
+    background-image: url('../img/scooter.f0a0397.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+} 
+
+section.parco .row .col-lg-3{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+
+section.parco .row .col-lg-3 ul li{
+    list-style: none;
+}
+
+section.parco .row .col-lg-3 ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* section app-find */
+
+section.app-find{
+    color: white;
+}
+
+section.app-find li{
+    list-style: none;
+}
+
+section.app-find a{
+    text-decoration: none;
+    color: white;
+}
+
+
+section.app-find .row .col-lg-5:first-child{
+    background-color: #3f5366;
+}
+
+.row .col-lg-5:first-child .row .col-lg-12{
+    background-image: url('../img/iphone-bg.2dae1bd.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 260px;
+    height: 400px;
+}
+
+
+section.app-find .row .col-lg-5:last-child{
+    background-image: url('../img/city.7c8c928.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+
+
+    
+
 }
