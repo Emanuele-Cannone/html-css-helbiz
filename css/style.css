@@ -106,6 +106,7 @@ body{
     border-right: none;
 }
 
+
 /* jumbotron */
 
 .jumbotron{
@@ -350,7 +351,54 @@ section.footer-up .row [class*="col-"] ul li a{
 
 
 /* footer-down */
+
+
 section.footer-down a img{
     border: 1px solid white;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width:768px){
+    
+
+    header .header-top .row .col-lg-3{
+        padding-left: 10px;
+    }
+
+    section.parco .row .col-lg-3{
+        position: absolute;
+        top: 35%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    section.parco [class*="col-"] h4{
+        font-size: 20px;
+    }
+
+    section.parco [class*="col-"] p{
+        padding: 15px;
+    }
+    
+    section.social .row>[class*="col-"]:first-child{
+        font-size: 20px;
+    }
+
+    section.policy{
+        padding-left: 15px;
+    }
+
+
+    section.footer-up .row{
+        position: relative;
+    }
+
+    section.footer-up .row .col-xs-12 ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
