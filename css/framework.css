@@ -46,6 +46,10 @@
   float: left;
 }
 
+.capitalize{
+  text-transform: capitalize;
+}
+
 /* allineamento */
 .text-right {
   text-align: right;

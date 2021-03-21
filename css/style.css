@@ -292,6 +292,10 @@ section.policy, section.footer-up, section.footer-down{
     background-color: black;
 }
 
+section.policy{
+    padding-bottom: 20px;
+}
+
 section.policy .col-lg-3{
     margin-top: 40px;
 }
